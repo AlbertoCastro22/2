@@ -132,6 +132,9 @@ public class MerkleHellman {
         return p;
     }
 
+    /**
+     * metodo para encriptar cada letra
+     */
     public BigInteger encriptar(char letra) {
         System.out.println("Caracter a encriptar = [" + letra + "]");
         String auxiliar = letra + "";
@@ -163,13 +166,17 @@ public class MerkleHellman {
             nodo3 = nodo3.getSiguiente();
         }
         y = new BigInteger(auxiliar5 + "");
-       // System.out.println("Caracter encriptado: " + y);
+        // System.out.println("Caracter encriptado: " + y);
         return y;
     }
+
+    /**
+     * metodo para desencriptar cada letra
+     */
     public String Desencriptar(char letra) {
-      Lista<BigInteger> para=new Lista<BigInteger>();
-      String cadena="";//=letra+"";
-      cadena+=letra;
-      return cadena;
-     }
+        Lista<BigInteger> para = new Lista<BigInteger>();
+        String cadena = "";//=letra+"";
+        cadena += letra;
+        return cadena;
+    }
 }

@@ -6,7 +6,6 @@
 package messenger;
 
 import java.util.Random;
-
 /**
  *
  * @author Usersone
@@ -217,7 +216,8 @@ public class Lista <T extends Comparable<T>>{
         }
     }
     /**
-     * este metodo insertara un dato antes de otro
+     * este metodo insertara un dato antes de otro  
+     * 
      */
     public void InsertarAntesDe(T dato, T referencia){
         Nodo<T> temporal,nodoEncontrado, nuevo;
